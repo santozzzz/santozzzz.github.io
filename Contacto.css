@@ -1,0 +1,344 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color:lightgrey;
+}
+
+.container{
+    position:absolute;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+
+.container input{
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding: 0 20px;
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid greenyellow;
+    transition: all .7s ease;
+}
+
+::placeholder{
+    color:gray;
+}
+
+.btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.btn i{
+    right: 500px;
+    font-size: 25px;
+    color: beige;
+    line-height: 80px;
+    transition: all .7s ease
+}
+
+.container:hover input{
+    width: 350px;
+}
+
+.container:hover i{
+    transform: rotate(-360deg);
+}
+
+.btn:hover{
+    background:black;
+}
+
+.banner{
+    background: url(banner.jpg)no-repeat;
+    height: 300px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    min-height: 70px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.carrito-compras{
+    height: 100px;
+    width: 100px;
+    float: right;
+}
+
+.carrito-compras:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img{
+    height: 100px;
+    margin-left: 5px;
+    transition: all 0.3s;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    font-weight: 600px;
+    padding-right: 5px;
+}
+
+nav a:hover{
+    color:orange;
+    font-size: 700;
+}
+
+.nombre-empresa{
+    margin: 30px;
+    color: white;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.boton{
+    width: 100px;
+    background-color: white;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.boton:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+.container-form{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin: 90px;
+}
+
+.container-form h2{
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.container-form a i{
+    color: black;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea{
+    max-width: 650px;
+    min-width: 650px;
+    min-height: 140px;
+    max-height: 140px;
+}
+
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-bottom: 50px;
+}
+
+.container-form .btn-enviar:hover{
+    background: black;
+    transform: scale(1.1);
+}
+
+.correo-btn{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    float: right;
+    margin-right: 400px;
+    position: relative;
+    top: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pie-pagina{
+    width: 100%;
+    background-color:black;
+    margin: 50px 0 0 0;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 300px;
+}
+
+.pie-pagina .grupo-1.box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color:cadetblue;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: black;
+}
+
+.pie-pagina .grupo-2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: aqua;
+}
+
+.box h2{
+    color: white;
+}
